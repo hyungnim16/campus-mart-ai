@@ -5,8 +5,9 @@ langchain-community==0.2.16
 langchain-text-splitters==0.2.4
 langchain-groq
 sentence-transformers
-chromadb
+chromadb==0.4.24
 docx2txt
 pypdf
 torchvision
 torch
+protobuf==3.20.3
