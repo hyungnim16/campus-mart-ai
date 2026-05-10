@@ -29,6 +29,8 @@ html, body, .stApp, .main, .block-container,
 [data-testid="stToolbar"],
 [data-testid="stDecoration"],
 [data-testid="stStatusWidget"],
+[data-testid="stBottom"],
+[data-testid="stBottom"] > div,
 section[data-testid="stSidebar"],
 .stChatFloatingInputContainer,
 div[data-testid="stChatInput"],
@@ -210,6 +212,17 @@ div[data-testid="stButton"] button:hover {
 
 [data-testid="stChatInput"]:focus-within textarea {
     border-color: #e05a5a !important;
+}
+
+/* Fix bottom gray bar */
+[data-testid="stBottom"] {
+    background: #0d0d0d !important;
+    background-color: #0d0d0d !important;
+}
+
+[data-testid="stBottom"] > div {
+    background: #0d0d0d !important;
+    background-color: #0d0d0d !important;
 }
 
 /* Spinner */
