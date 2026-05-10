@@ -25,9 +25,17 @@ st.markdown("""
 html, body, .stApp, .main, .block-container,
 [data-testid="stAppViewContainer"],
 [data-testid="stBottomBlockContainer"],
-section[data-testid="stSidebar"] {
+[data-testid="stHeader"],
+[data-testid="stToolbar"],
+[data-testid="stDecoration"],
+[data-testid="stStatusWidget"],
+section[data-testid="stSidebar"],
+.stChatFloatingInputContainer,
+div[data-testid="stChatInput"],
+.stChatInputContainer {
     font-family: 'Sora', sans-serif !important;
     background: #0d0d0d !important;
+    background-color: #0d0d0d !important;
     color: #f0f0f0 !important;
 }
 
@@ -35,6 +43,7 @@ section[data-testid="stSidebar"] {
     padding-top: 1.5rem !important;
     padding-bottom: 1rem !important;
     max-width: 700px !important;
+    background: #0d0d0d !important;
 }
 
 /* ---- INTRO ---- */
@@ -203,12 +212,6 @@ div[data-testid="stButton"] button:hover {
     border-color: #e05a5a !important;
 }
 
-/* Fix bottom input bar background */
-[data-testid="stBottomBlockContainer"] {
-    background: #0d0d0d !important;
-    padding-bottom: 1rem !important;
-}
-
 /* Spinner */
 .stSpinner > div { border-top-color: #e05a5a !important; }
 </style>
@@ -266,7 +269,7 @@ if st.session_state.page == "intro":
     st.markdown("""
         <div class="intro-chip">MCC · Mandaue City College</div>
         <div class="intro-heading">Campus Mart<br><span>AI Guide</span></div>
-        <div class="intro-sub">Your intelligent assistant for the campus marketplace, ask anything about buying, selling, donating, and trading.</div>
+        <div class="intro-sub">Your intelligent assistant for the campus marketplace — ask anything about buying, selling, donating, and trading.</div>
         <div class="feature-row">
             <div class="feat"><span>🛒</span> Buy & Sell</div>
             <div class="feat"><span>💝</span> Donate</div>
