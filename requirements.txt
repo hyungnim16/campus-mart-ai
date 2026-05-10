@@ -1,0 +1,10 @@
+streamlit
+langchain==0.2.16
+langchain-core==0.2.38
+langchain-community==0.2.16
+langchain-text-splitters==0.2.4
+langchain-groq
+sentence-transformers
+chromadb
+docx2txt
+pypdf
